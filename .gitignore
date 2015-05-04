@@ -1,0 +1,109 @@
+
+CREATE TABLE `Pizza` (
+	`ID` INT NULL,
+	`Name` INT NULL,
+	`Beschreibung` INT NULL,
+	`Preis` INT NULL,
+	`Zutaten` INT NULL
+)
+COLLATE='latin1_general_ci'
+ENGINE=MyISAM
+;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='mysql';
+SHOW TABLE STATUS FROM `mysql`;
+SHOW FUNCTION STATUS WHERE `Db`='mysql';
+SHOW PROCEDURE STATUS WHERE `Db`='mysql';
+SHOW TRIGGERS FROM `mysql`;
+SHOW EVENTS FROM `mysql`;
+
+SHOW CREATE TABLE `mysql`.`Pizza`;
+SHOW VARIABLES LIKE 'collation_database';
+CREATE TABLE `Kundendaten` (
+	`ID` INT NULL,
+	`Loginname` INT NULL,
+	`PW` INT NULL,
+	`Strasse` INT NULL,
+	`Hausnummer` INT NULL,
+	`PLZ` INT NULL,
+	`Ort` INT NULL,
+	`Name` INT NULL,
+	`Vorname` INT NULL,
+	`Punktekonto` INT NULL
+)
+COLLATE='latin1_general_ci'
+ENGINE=MyISAM
+;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='mysql';
+SHOW TABLE STATUS FROM `mysql`;
+SHOW FUNCTION STATUS WHERE `Db`='mysql';
+SHOW PROCEDURE STATUS WHERE `Db`='mysql';
+SHOW TRIGGERS FROM `mysql`;
+SHOW EVENTS FROM `mysql`;
+
+SHOW CREATE TABLE `mysql`.`Kundendaten`;
+SHOW VARIABLES LIKE 'collation_database';
+CREATE TABLE `Zutaten` (
+	`ID` INT NULL,
+	`Preis` INT NULL,
+	`Inhalt` INT NULL
+)
+COLLATE='latin1_general_ci'
+ENGINE=MyISAM
+;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='mysql';
+SHOW TABLE STATUS FROM `mysql`;
+SHOW FUNCTION STATUS WHERE `Db`='mysql';
+SHOW PROCEDURE STATUS WHERE `Db`='mysql';
+SHOW TRIGGERS FROM `mysql`;
+SHOW EVENTS FROM `mysql`;
+
+SHOW CREATE TABLE `mysql`.`Zutaten`;
+SHOW VARIABLES LIKE 'collation_database';
+CREATE TABLE `Position` (
+	`ID` INT NULL,
+	`BestellungenID` INT NULL,
+	`PizzaID` INT NULL,
+	`Menge` INT NULL
+)
+COLLATE='latin1_general_ci'
+ENGINE=MyISAM
+;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='mysql';
+SHOW TABLE STATUS FROM `mysql`;
+SHOW FUNCTION STATUS WHERE `Db`='mysql';
+SHOW PROCEDURE STATUS WHERE `Db`='mysql';
+SHOW TRIGGERS FROM `mysql`;
+SHOW EVENTS FROM `mysql`;
+
+SHOW CREATE TABLE `mysql`.`Position`;
+SHOW VARIABLES LIKE 'collation_database';
+CREATE TABLE `Extra` (
+	`ExtraID` INT NULL
+)
+COLLATE='latin1_general_ci'
+ENGINE=MyISAM
+;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='mysql';
+SHOW TABLE STATUS FROM `mysql`;
+SHOW FUNCTION STATUS WHERE `Db`='mysql';
+SHOW PROCEDURE STATUS WHERE `Db`='mysql';
+SHOW TRIGGERS FROM `mysql`;
+SHOW EVENTS FROM `mysql`;
+
+SHOW CREATE TABLE `mysql`.`Extra`;
+SHOW VARIABLES LIKE 'collation_database';
+CREATE TABLE `Bestellungen` (
+	`ID` INT NULL,
+	`KundenID` INT NULL
+)
+COLLATE='latin1_general_ci'
+ENGINE=MyISAM
+;
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='mysql';
+SHOW TABLE STATUS FROM `mysql`;
+SHOW FUNCTION STATUS WHERE `Db`='mysql';
+SHOW PROCEDURE STATUS WHERE `Db`='mysql';
+SHOW TRIGGERS FROM `mysql`;
+SHOW EVENTS FROM `mysql`;
+
+SHOW CREATE TABLE `mysql`.`Bestellungen`;
